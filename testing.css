@@ -26,10 +26,11 @@ ul {
 li {
     position: relative;
     list-style: none;
-    margin: 0;
+    margin: 10px;
     border-bottom: 1px solid #CCC;
     font-size: 16px;
-    display: inline;
+    display: inline-block
+
 }
 
 li:hover {
@@ -50,6 +51,7 @@ ul ul {
 li.submenu:hover {
     background: #55d;
 }
+
 
 li.submenu:hover ul {
     display: inline-block;
