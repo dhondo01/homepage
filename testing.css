@@ -19,8 +19,8 @@ body {
 ul {
     margin: 0;
     padding: 0;
-    background: white;
-    border: 1px solid;
+    background:none;
+    
 }
 
 li {
@@ -38,14 +38,14 @@ li:hover {
 }
 
 li.submenu {
-    background: #efefef;
+    background: #bbbbbb;
 }
 
 ul ul {
     display: none;
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 100px;#
 }
 
 li.submenu:hover {
