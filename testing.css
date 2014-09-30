@@ -16,49 +16,101 @@ body {
     font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    background:none;
-    
+h1 {
+  font: 400 60px/1.3 'Bree Serif', Georgia, serif;
 }
+
+h4 {
+  font: 400 18px/1.3 'Bree Serif', Georgia, serif;
+}
+
+p {
+  font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+nav {
+     margin-top: 20px;
+     margin-bottom: 0px;
+     background-color: green;
+}
+nav li {
+    display: inline;
+}
+section {
+     float: left;
+     width: 20%;
+     height: 500px;
+     background-color: blue;
+     color: white;
+}
+aside {
+ float: left;
+ width: 80%;
+ height: 500px;
+ background-color: red;
+}
+footer {
+     margin-top: 90px;
+     clear: both;
+     background-color: none;
+     font: 400 16px/1.2 'Nixie One', Georgia, serif;
+}
+ul {
+   padding: 0;
+   margin: 25px;
+   margin-left: 25%;
+   position: relative;
+}
+
 
 li {
-    position: relative;
-    list-style: none;
-    margin: 10px;
-    border-bottom: 1px solid #CCC;
-    font-size: 16px;
-    display: inline-block
-
+   display: inline-block;
+   border-bottom: 1px solid #CCC;
 }
 
-li:hover {
-    background: #ebb;
+ul.nav li {
+   vertical-align: top;
+   font-size: 100%;
+   text-align: center;
+   width: 105px;
 }
 
-li.submenu {
-    background: #bbbbbb;
+ul.nav li a {
+   display: inline-block;
+   padding: 10px 5px;
 }
 
-ul ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100px;#
+ul.nav li a {
+   text-decoration: none;
 }
 
-li.submenu:hover {
-    background: #55d;
+ul.nav li a:link, a:visited, a:active {
+   color: black;
 }
 
-
-li.submenu:hover ul {
-    display: inline-block;
+ul.nav li:hover {
+   background-color: #bbbbbb;
+   color: white;
 }
 
-li a {
-    display: inline-block;
+ul.nav li ul {
+   list-style: none;
+   display: none;
+}
+
+ul.nav li:hover ul {
+   display: inline-block;
+}
+
+ul.nav li ul li {
+   padding: 10px 5px;
+   display: block;
+   width:100px;
+   text-align: left;
+}
+
+ul.nav li:hover ul {
+   background-color: blue;
 }
 
 
@@ -66,9 +118,4 @@ h1 {
     color: orange;
     text-align: center;
     margin-top: 50px;
-    
-
-footer {
-    clear: both;
-    background-color: yellow;
 }
