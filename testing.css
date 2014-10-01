@@ -18,14 +18,22 @@ body {
 
 h1 {
   font: 400 60px/1.3 'Bree Serif', Georgia, serif;
+  margin: 20px;
+}
+
+h3 {
+  font: 400 20px/1.3 'Bree Serif', Georgia, serif;
+  margin: 20px;
 }
 
 h4 {
-  font: 400 18px/1.3 'Bree Serif', Georgia, serif;
+  font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 p {
   font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin: 10px;
 }
 
 nav {
@@ -33,9 +41,11 @@ nav {
      margin-bottom: 0px;
      background-color: green;
 }
+
 nav li {
     display: inline;
 }
+
 section {
      float: left;
      width: 20%;
@@ -43,21 +53,32 @@ section {
      background-color: blue;
      color: white;
 }
+
 aside {
- float: left;
- width: 80%;
- height: 500px;
- background-color: red;
+     float: left;
+     width: 80%;
+     height: 500px;
+     background-color: grey;
 }
+
+img.banner {
+    width: 100%;
+}
+
+img.profile_pic {
+    align-content: center;
+    margin:10%;
+}
+
 footer {
      margin-top: 90px;
      clear: both;
-     background-color: none;
+     background-color: yellow;
      font: 400 16px/1.2 'Nixie One', Georgia, serif;
 }
 ul {
    padding: 0;
-   margin: 25px;
+   margin: 10px;
    margin-left: 25%;
    position: relative;
 }
@@ -65,14 +86,15 @@ ul {
 
 li {
    display: inline-block;
-   border-bottom: 1px solid #CCC;
+   border: 1px solid #CCC;
+   align-content: center;
 }
 
 ul.nav li {
    vertical-align: top;
    font-size: 100%;
    text-align: center;
-   width: 105px;
+   width:90px;
 }
 
 ul.nav li a {
