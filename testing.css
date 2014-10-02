@@ -1,3 +1,8 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 header {
     position: fixed;
     background-color: #bbbbbb;
@@ -36,10 +41,11 @@ p {
   margin: 10px;
 }
 
-nav {
-     margin-top: 20px;
-     margin-bottom: 0px;
-     background-color: green;
+.nav {
+    width: 600px;
+    margin: 0px auto;
+    overflow: auto;
+    margin-bottom: 15px;
 }
 
 nav li {
@@ -55,10 +61,11 @@ section {
 }
 
 aside {
-     float: left;
-     width: 80%;
-     height: 500px;
-     background-color: grey;
+    float: left;
+    width: 80%;
+    min-height:  500px;
+    background-color: grey;
+    overflow: auto;
 }
 
 img.banner {
@@ -66,22 +73,30 @@ img.banner {
 }
 
 img.profile_pic {
-    align-content: center;
-    margin:10%;
+    display: block;
+    max-width: 180px;
+    margin: 0px auto;
 }
 
 footer {
-     margin-top: 90px;
-     clear: both;
-     background-color: yellow;
-     font: 400 16px/1.2 'Nixie One', Georgia, serif;
+    position: abosolute;
+    width: 100%;
+    left:0;
+    bottom:0;
+    background-color: lightgreen;
+    font: 400 16px/1.2 'Nixie One', Georgia, serif;
+    height: 24px;
+    line-height: 24px;
+    overflow: auto;
 }
+/*
 ul {
    padding: 0;
    margin: 10px;
    margin-left: 25%;
    position: relative;
 }
+*/
 
 
 li {
@@ -91,10 +106,10 @@ li {
 }
 
 ul.nav li {
-   vertical-align: top;
-   font-size: 100%;
-   text-align: center;
-   width:90px;
+    vertical-align: top;
+    font-size: 100%;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 ul.nav li a {
@@ -124,16 +139,20 @@ ul.nav li:hover ul {
    display: inline-block;
 }
 
+/*
 ul.nav li ul li {
    padding: 10px 5px;
    display: block;
    width:100px;
    text-align: left;
 }
+*/
 
+/*
 ul.nav li:hover ul {
    background-color: blue;
 }
+*/
 
 
 h1 {
