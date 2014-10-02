@@ -64,7 +64,7 @@ aside {
     float: left;
     width: 80%;
     min-height:  500px;
-    background-color: grey;
+    background-color: lightgrey;
     overflow: auto;
 }
 
@@ -89,6 +89,7 @@ footer {
     line-height: 24px;
     overflow: auto;
 }
+
 /*
 ul {
    padding: 0;
@@ -126,8 +127,7 @@ ul.nav li a:link, a:visited, a:active {
 }
 
 ul.nav li:hover {
-   background-color: #bbbbbb;
-   color: white;
+   background-color: lightgrey;
 }
 
 ul.nav li ul {
