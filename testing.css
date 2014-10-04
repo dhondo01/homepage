@@ -85,22 +85,15 @@ footer {
     width: 100%;
     left:0;
     bottom:0;
-    background-color: lightgreen;
+    background-color: #9C4848;
     font: 400 16px/1.2 'Nixie One', Georgia, serif;
     height: 24px;
     line-height: 24px;
     overflow: auto;
     text-align: center;
+    /*text-transform: uppercase;*/
+    
 }
-
-/*
-ul {
-   padding: 0;
-   margin: 10px;
-   margin-left: 25%;
-   position: relative;
-}
-*/
 
 
 li {
@@ -141,18 +134,3 @@ ul.nav li ul {
 ul.nav li:hover ul {
     display: inline-block;
 }
-
-/*
-ul.nav li ul li {
-   padding: 10px 5px;
-   display: block;
-   width:100px;
-   text-align: left;
-}
-*/
-
-/*
-ul.nav li:hover ul {
-   background-color: blue;
-}
-*/
