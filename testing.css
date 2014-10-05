@@ -9,27 +9,31 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 25px;
-    margin-bottom: 100;
+    height: 23px;
     color: white;
     font-size: 14px;
+    font-family: 'Helvetica Neue', serif;
     text-align: center;
 }
 
 body {
-    background: #909eab;
-    font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
+    background: #9A9A9A;
 }
 
 h1 {
-    font: 400 60px/1.3 'Bree Serif', Georgia, serif;
+    font: 400 40px/1.3 'Bree Serif', Georgia, serif;
+    margin-top: 35px;
     text-align: center;
+    font-weight: bold;
+    color: rgba(21, 22, 107, 1);
 
 }
 
 h3 {
-    font: 400 20px/1.3 'Bree Serif', Georgia, serif;
     margin: 20px;
+    font-weight: bold;
+    color: #4183C4;
+    font: 20px/1.4 Helvetica,arial,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
 }
 
 h4 {
@@ -37,21 +41,12 @@ h4 {
     margin: 20px;
 }
 
+
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 16px;
     margin: 10px;
-    font-size: 0.9em;
-}
-
-.nav {
-    width: 600px;
-    margin: 0px auto;
-    overflow: auto;
-    margin-bottom: 15px;
-}
-
-nav li {
-    display: inline;
 }
 
 section {
@@ -66,7 +61,7 @@ aside {
     float: left;
     width: 80%;
     min-height:  500px;
-    background-color: ligtgrey;
+    background-color: #FFF;
     overflow: auto;
 }
 
@@ -83,11 +78,11 @@ img.profile_pic {
 footer {
     position: abosolute;
     width: 100%;
-    left:0;
-    bottom:0;
-    background-color: #9C4848;
+    left:0px;
+    bottom:0px;
+    background-color: #333;
     font: 400 16px/1.2 'Nixie One', Georgia, serif;
-    height: 24px;
+    color: #9A9A9A;
     line-height: 24px;
     overflow: auto;
     text-align: center;
@@ -95,12 +90,22 @@ footer {
     
 }
 
-
 li {
    display: inline-block;
    border: 1px solid #CCC;
-   align-content: center;
+   /*font-weight: bold;*/
+   font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
 }
+
+.nav {
+    position: relative;
+    width: 600px;
+    margin: 0px auto;
+    overflow: auto;
+    /*margin-top: 40px;*/
+    margin-bottom: 15px;
+}
+
 
 ul.nav li {
     vertical-align: top;
@@ -123,7 +128,7 @@ ul.nav li a:link, a:visited, a:active {
 }
 
 ul.nav li:hover {
-    background-color: white;
+    background-color: lightgrey;
 }
 
 ul.nav li ul {
