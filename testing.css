@@ -76,7 +76,7 @@ img.profile_pic {
 }
 
 footer {
-    position: abosolute;
+    position: fixed;
     width: 100%;
     left:0px;
     bottom:0px;
