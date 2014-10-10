@@ -1,24 +1,26 @@
 // Check if the task is done
-task_done = function(li)
+var task_done = function(li)
 {	
 	taski = li.parentNode;
 
 	if(li.checked == true)
 	{
-		taski.parentNode.className = "checked";
+		taski.parentNode.classList.add('checked');
+		// taski.parentNode.className = "checked";
 	}
 	else
 	{
-		taski.parentNode.className = "";
+		taski.parentNode.classList.remove('checked');
+		//taski.parentNode.className = "";
 	}
 }
 
 // Add task
-add_task = function()
+var add_task = function()
 {
 	if(document.getElementById("new_task").value != "")
 	{	
-		var priority;
+		var priority, li, label, task;
 		li = document.createElement('li');
 		label = document.createElement('label');
 		task = document.createElement('input');
