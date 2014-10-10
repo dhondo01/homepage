@@ -37,10 +37,24 @@ label {
     font: 400 15px/1.2 'Nixie One', Georgia, serif;
 }
 
-button {
-	width: 10%;
-	font-weight: bolder;
-	font: 400 15px/1.2 'Nixie One', Georgia, serif;
+button#remove {
+	float: right;
+	width: 90px;
+	font-weight: bold;
+	font-family:'Bree Serif', Georgia, serif;
+	font-size: 18px;
+	padding: 4px;
+	margin-right: 20px;
+}
+
+button#add {
+	float: right;
+	width: 90px;
+	font-weight: bold;
+	font-family:'Bree Serif', Georgia, serif;
+	font-size: 18px;
+	padding: 4px;
+	margin-right: 4%;
 }
 
 aside {
@@ -51,12 +65,18 @@ aside {
 }
 
 section {
-	position: relative;
-	width: 100%;
+	background-color: #2285E8;
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 0px auto;
 }
 
 select {
-	font: 400 15px/1.2 'Nixie One', Georgia, serif;
+	font-family: 'Nixie One', Georgia, serif;
+	font-size: 13px;
 }
 
 #task_box {

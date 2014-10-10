@@ -6,12 +6,11 @@ var task_done = function(li)
 	if(li.checked == true)
 	{
 		taski.parentNode.classList.add('checked');
-		// taski.parentNode.className = "checked";
 	}
 	else
 	{
 		taski.parentNode.classList.remove('checked');
-		//taski.parentNode.className = "";
+		taski.parentNode.className = "";
 	}
 }
 
