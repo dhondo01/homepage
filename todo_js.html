@@ -1,4 +1,5 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
 <head>
 <title>To-do App</title>
@@ -11,19 +12,24 @@
 	<div>
         <h1>To-do List</h1>
         <div id="task_box">
-            <ul id="task_ul"> </ul>
+            <ul id="task_list"> <p text-align="center"> Let's get things done! </p> </ul>
             <section>
                 <label for='new_task'>New Task </label>
-                <input id="new_task" type="text" value="" placeholder="What's in your mind?" size="40">
-                <select id="priority">
+                <input id="new_task" type="text" value="" placeholder="What's on your mind?">
+                <select>
                 	<option value="high">High</option>
                 	<option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                    
+                    <option value="low">Low</option> 
                 </select>
-                <button id="remove" onclick="remove_task()">Remove</button>
-                <button id="add" onclick="add_task()">Add</button>
+                <br>
+                <aside>
+                <button onclick="add_task()">Add</button>
+                <button onclick="remove_task()">Remove</button>
+                <button onclick="clear_all()">Clear All</button>
+                <button onclick="restore_task()">Restore</button>
+                <aside>
             </section>
+
         </div>  
 	</div>
 </body>
