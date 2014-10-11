@@ -21,8 +21,7 @@ div {
 ul {
 	list-style-type: none;
 	border: 1px solid;
-	overflow: auto;
-	padding: 10px;
+	padding: 2%;
 	background-color: #bbbbbb;
 	line-height: 150%;
 }
@@ -32,23 +31,21 @@ input {
 	font: 400 15px/1.2 'Nixie One', Georgia, serif;
 	width: 65%;
 	margin: 0px auto;
-	padding: 10px;
+	padding: 2%;
 }
 
 p {
-	font-size: 18px;
 	text-align: center;
-	font: 400 15px/1.2 'Nixie One', Georgia, serif;
+	font: 400 18px/1.5 'Nixie One', Georgia, serif;
 }
 
 label {
 	font-size: 18px;
-	text-align: center;
     font-family: 'Nixie One', serif;
 }
 
 button  {
-	font-size: 100%;
+	font-size: 18px;
 	font-weight: bold;
 	font-family: 'Nixie One', serif;
 	position: relative;
@@ -63,21 +60,19 @@ section {
 }
 
 aside {
+	margin-top: 2px;
 	text-align: center;
 
 }
 
 select {
 	font-size: 18px;
-	color: red;
+	font-family: 'Nixie One', serif;
 }
 
 #task_box {
-	left: 0;
-	top: 0;
 	width: 80%;
 	margin: 0px auto;
-    padding-bottom: 0px;
 }
 
 .high {
