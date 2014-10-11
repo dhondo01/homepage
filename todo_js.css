@@ -3,96 +3,80 @@ html, body {
 	margin: 0px;
 }
 
-body {
+/*body {
 	background-color: #262626; 
-}
+}*/
 
 h1 {
 	text-align: center;
-	color: white;
+	color: black;
 	font-family:'Nixie One', Georgia, serif;
 	font-size: 50px;
 }
 
 div {
-	margin-top: 2%;
-	background-color: #333;
-	padding-bottom: 40px;
+	margin: 5px;
 }
 
 ul {
 	list-style-type: none;
+	border: 1px solid;
+	overflow: auto;
+	padding: 10px;
+	background-color: #bbbbbb;
+	line-height: 150%;
 }
 
 input {
-	font-size: 15px;
+	font-size: 18px;
 	font: 400 15px/1.2 'Nixie One', Georgia, serif;
-	width: 40%;
+	width: 65%;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+p {
+	font-size: 18px;
+	text-align: center;
+	font: 400 15px/1.2 'Nixie One', Georgia, serif;
 }
 
 label {
 	font-size: 18px;
-	color: white;
+	text-align: center;
     font-family: 'Nixie One', serif;
 }
 
-label#t {
-	font-family:'Bree Serif', Georgia, serif;
-	font-size: 18px;
-	color: black;
-
-}
-
-button#remove {
-	background-color: red;
-	float: right;
-	width: 90px;
+button  {
+	font-size: 100%;
 	font-weight: bold;
-	font-family:'Bree Serif', Georgia, serif;
-	font-size: 18px;
-	padding: 4px;
-	margin-right: 20px;
-}
-
-button#add {
-	background-color: green;
-	float: right;
-	width: 90px;
-	font-weight: bold;
-	font-family:'Bree Serif', Georgia, serif;
-	font-size: 18px;
-	padding: 4px;
-	margin-right: 4%;
-}
-
-aside {
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 0px;
+	font-family: 'Nixie One', serif;
+	position: relative;
+	padding: 1%;
+	margin: 1%;
 }
 
 section {
 	background-color: #2285E8;
-	width: 80%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 5px;
-	padding-left: 5px;
 	margin: 0px auto;
+	padding: 10px;
+}
+
+aside {
+	text-align: center;
+
 }
 
 select {
-	font: 400 18px/1.2 'Nixie One', Georgia, serif;
-	margin-left: 2%;
+	font-size: 18px;
+	color: red;
 }
 
 #task_box {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 5px;
+	left: 0;
+	top: 0;
+	width: 80%;
+	margin: 0px auto;
     padding-bottom: 0px;
 }
 
