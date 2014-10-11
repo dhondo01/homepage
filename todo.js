@@ -32,5 +32,6 @@ var add_task = function()
 
 		document.getElementById("task_ul").appendChild(li);
 	}
+	 document.getElementById("new_task").value = "";
 }
 

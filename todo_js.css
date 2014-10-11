@@ -31,10 +31,16 @@ input {
 }
 
 label {
-	font-size: 15px;
+	font-size: 18px;
 	color: white;
-    font-weight: bold;
-    font: 400 15px/1.2 'Nixie One', Georgia, serif;
+    font-family: 'Nixie One', serif;
+}
+
+label#t {
+	font-family:'Bree Serif', Georgia, serif;
+	font-size: 18px;
+	color: black;
+
 }
 
 button#remove {
@@ -109,6 +115,7 @@ select {
 
 
 /*
+colors
 #333
 
 #262626*/
