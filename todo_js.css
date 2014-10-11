@@ -26,8 +26,8 @@ ul {
 
 input {
 	font-size: 15px;
-	color: gray;
 	font: 400 15px/1.2 'Nixie One', Georgia, serif;
+	width: 40%;
 }
 
 label {
@@ -38,6 +38,7 @@ label {
 }
 
 button#remove {
+	background-color: red;
 	float: right;
 	width: 90px;
 	font-weight: bold;
@@ -48,6 +49,7 @@ button#remove {
 }
 
 button#add {
+	background-color: green;
 	float: right;
 	width: 90px;
 	font-weight: bold;
@@ -75,8 +77,8 @@ section {
 }
 
 select {
-	font-family: 'Nixie One', Georgia, serif;
-	font-size: 13px;
+	font: 400 18px/1.2 'Nixie One', Georgia, serif;
+	margin-left: 2%;
 }
 
 #task_box {
