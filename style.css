@@ -65,6 +65,7 @@ aside {
 }
 
 img.banner {
+    position: relative;
     width: 100%;
 }
 
@@ -82,24 +83,20 @@ footer {
     font: 400 16px/1.2 'Nixie One', Georgia, serif;
     color: #9A9A9A;
     line-height: 24px;
-    overflow: auto;
     text-align: center;
     
 }
 
 li {
    display: inline-block;
-   color: white;
    border: 1px solid #CCC;
    font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
 }
 
 .nav {
-    position: relative;
-    width: 600px;
-    margin: 0px auto;
-    overflow: auto;
-    margin-bottom: 15px;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
 }
 
 
@@ -120,11 +117,11 @@ ul.nav li a {
 }
 
 ul.nav li a:link, a:visited, a:active {
-   color: black;
+   color: white;
 }
 
 ul.nav li:hover {
-    background-color: lightgrey;
+    background-color: black;
 }
 
 ul.nav li ul {
