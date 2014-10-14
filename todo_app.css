@@ -12,31 +12,37 @@ h1 {
 	color: black;
 	font-family:'Nixie One', Georgia, serif;
 	font-size: 50px;
+	margin: 2px auto;
 }
 
 div {
 	margin: 5px;
+	overflow: scroll;
 }
 
 ul {
+	width: 80%;
+	margin: 0px auto;
 	list-style-type: none;
-	border: 1px solid;
-	padding: 2%;
+	border: 1px solid blue;
+	padding: 4%;
+	max-height: 50%;
 	background-color: #bbbbbb;
-	line-height: 150%;
+	line-height: 180%;
+	overflow: scroll;
 }
 
-input {
-	font-size: 18px;
-	font: 400 15px/1.2 'Nixie One', Georgia, serif;
-	width: 65%;
+input[type='text'] {
+	font: 400 18px/1.2 'Nixie One', Georgia, serif;
+	width: 55%;
 	margin: 0px auto;
-	padding: 2%;
+	padding: 1%;
 }
 
 p {
 	text-align: center;
-	font: 400 18px/1.5 'Nixie One', Georgia, serif;
+	font-size: 20px;
+	font: 'Nixie One', Georgia, serif;
 }
 
 label {
@@ -44,25 +50,30 @@ label {
 	font-family: 'Nixie One', serif;
 }
 
-button  {
+.item-container {
 	font-size: 18px;
+	font-family: 'Nixie One', serif;
+}
+
+button  {
+	font-size: 23px;
+	border: 1px solid;
 	font-weight: bold;
 	font-family: 'Nixie One', serif;
 	position: relative;
 	padding: 1%;
-	margin: 1%;
+	margin: .3%;
 }
 
 section {
 	background-color: #2285E8;
-	margin: 0px auto;
+	margin: 5px auto;
 	padding: 10px;
 }
 
 aside {
-	margin-top: 2px;
+	margin-top: 5px;
 	text-align: center;
-
 }
 
 select {
@@ -71,7 +82,7 @@ select {
 }
 
 #task_box {
-	width: 80%;
+	width: 100%;
 	margin: 0px auto;
 }
 
@@ -92,7 +103,17 @@ select {
 	color: red;
 }
 
-
+footer {
+	position: absolute;
+	width: 100%;
+    left:0px;
+    bottom:0px;
+   /* background-color: #333;*/
+    font: 400 16px/1.2 'Nixie One', Georgia, serif;
+    color: #9A9A9A;
+    line-height: 24px;
+    text-align: center;   
+}
 /*
 colors
 #333
