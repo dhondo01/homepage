@@ -10,7 +10,7 @@
 <head>
 <title>To-do App</title>
 <link rel="stylesheet" href="todo_app.css" type="text/css"/>
-<script type="text/javascript" src="todo_app.js"></script>
+
 <link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
 </head>
 
@@ -18,26 +18,28 @@
 	<div>
         <h1>To-do List</h1>
         <div id="task_box">
-            <ul id="task_list"> <p text-align="center"> Let's get things done! </p> </ul>
+            <ul id="task_list"> <!-- <p text-align="center"> Let's get things done! </p> --> </ul>
             <section>
                 <label for='new_task'>New Task </label>
-                <input id="new_task" type="text" value="" placeholder="What's on your mind?">
-                <select>
+                <input id="new_task" type="text" value="" placeholder="What's on your mind?" onkeypress="task_enter(event)">
+                <select id='task_priority'>
                 	<option value="high">High</option>
                 	<option value="medium">Medium</option>
                     <option value="low">Low</option> 
                 </select>
                 <br>
                 <aside>
-                <button onclick="add_task()">Add</button>
-                <button onclick="remove_task()">Remove</button>
+                <button onclick="add_task()">Add ( Enter )</button>
+                <!-- <button onclick="remove_task()">Remove</button>
                 <button onclick="clear_all()">Clear All</button>
-                <button onclick="restore_task()">Restore</button>
-                <aside>
+                <button onclick="restore_task()">Restore</button> -->
+                </aside>
             </section>
-
         </div>  
 	</div>
+<script type="text/javascript" src="todo_app.js"></script>
+<footer> &copy 2014 Dorjee Dhondup. All rights reserved.
+</footer>
 </body>
 </html>
 
