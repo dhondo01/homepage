@@ -18,23 +18,23 @@
 	<div>
         <h1>To-do List</h1>
         <div id="task_box">
-            <ul id="task_list"> <p> Let's get things done! </p> </ul>
+            <ul id="task_list"> <p> Project </p> </ul>
             <section>
-                <label for='new_task'> New Task </label>
+                <label class="busy" for='new_task'> New Task: </label>
                 <input id="new_task" type="text" value="" placeholder="What's on your mind?" onkeypress="task_enter(event)">
                 <select id='task_priority'>
                 	<option value="high">High</option>
                 	<option value="medium">Medium</option>
                     <option value="low">Low</option> 
                 </select>
-                <br>
-                <aside>
-                <button onclick="add_task()">Add ( Enter )</button>
-                <!-- <button onclick="remove_task()">Remove</button>
-                <button onclick="clear_all()">Clear All</button>
-                <button onclick="restore_task()">Restore</button> -->
-                </aside>
             </section>
+            <section>
+                <label class="busy" id="new_task" for="new_task"> Due Date: </label>
+                <input class="due" id="new_task" type="text" value="" placeholder="Ex. Oct 24, 2014" onkeypress="task_enter(event)">
+            </section>
+            <aside>
+            <button onclick="add_task()">Add </button>
+            </aside>
         </div>  
 	</div>
 <footer> &copy 2014 Dorjee Dhondup. All rights reserved.
