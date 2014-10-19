@@ -58,7 +58,7 @@ window.onload = function()
 	var retrieve = localStorage['todoDatabase'];
 	tasks = JSON.parse(retrieve);
 	console.log(tasks);
-	for (var i=0; i < tasks.length; i++) {
+	for (var i=-1; i < tasks.length; i++) {
 		add_task_general(tasks[i].text, tasks[i].priority, tasks[i].due);
 	}
 }
@@ -87,6 +87,7 @@ var add_task_general = function (to_do, priority, due) {
 		local_save(tasks);
 	}
 	task.input.value = "";
+	task.due.value = "";
 }
 
 
@@ -94,7 +95,7 @@ var add_task_general = function (to_do, priority, due) {
 var add_task = function () {
 	var to_do = task.input.value;
 	var priority = task.priority.value;
-	var due = task.due.value();
+	var due = task.due.value;
 	tasks.push({
 		text: to_do,
 		priority: priority,
