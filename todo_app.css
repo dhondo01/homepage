@@ -130,19 +130,4 @@ select {
 	color: red;
 }
 
-footer {
-	position: absolute;
-	width: 100%;
-    left:0px;
-    bottom:0px;
-   /* background-color: #333;*/
-    font: 400 16px/1.2 'Nixie One', Georgia, serif;
-    color: #9A9A9A;
-    line-height: 24px;
-    text-align: center;   
-}
-/*
-colors
-#333
 
-#262626*/
