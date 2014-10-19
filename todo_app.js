@@ -63,7 +63,7 @@ window.onload = function()
 	}
 }
 
-var add_task_general = function (to_do, priority) {
+var add_task_general = function (to_do, priority, due) {
 
 	if (to_do != '') {
 
