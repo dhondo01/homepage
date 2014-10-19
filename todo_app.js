@@ -2,6 +2,7 @@ var task = {};
 task.list = document.querySelector('#task_list');
 task.input = document.getElementById("new_task");
 task.priority = document.getElementById('task_priority');
+task.due = document.querySelector('#due');
 
 var tasks = [];
 
@@ -58,7 +59,7 @@ window.onload = function()
 	tasks = JSON.parse(retrieve);
 	console.log(tasks);
 	for (var i=0; i < tasks.length; i++) {
-		add_task_general(tasks[i].text, tasks[i].priority);
+		add_task_general(tasks[i].text, tasks[i].priority, tasks[i].due);
 	}
 }
 
@@ -72,7 +73,7 @@ var add_task_general = function (to_do, priority) {
 		li.classList.add('item-container');
 		label = document.createElement('label');
 
-		label.textContent = to_do;
+		label.textContent = to_do + " --> Due: " + due;
 		label.classList.add(priority);
 
 		box = document.createElement('input');
@@ -95,9 +96,10 @@ var add_task = function () {
 	var priority = task.priority.value;
 	tasks.push({
 		text: to_do,
-		priority: priority
+		priority: priority,
+		due: due
 	});
-	add_task_general(to_do, priority);
+	add_task_general(to_do, priority, due);
 }
 
 // Add task when "Enter" is hit on the keyboard
