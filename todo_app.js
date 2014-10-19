@@ -73,7 +73,7 @@ var add_task_general = function (to_do, priority, due) {
 		li.classList.add('item-container');
 		label = document.createElement('label');
 
-		label.textContent = to_do + " --> Due: " + due;
+		label.textContent = to_do + " | Due: " + due;
 		label.classList.add(priority);
 
 		box = document.createElement('input');
@@ -94,6 +94,7 @@ var add_task_general = function (to_do, priority, due) {
 var add_task = function () {
 	var to_do = task.input.value;
 	var priority = task.priority.value;
+	var due = task.due.value();
 	tasks.push({
 		text: to_do,
 		priority: priority,
