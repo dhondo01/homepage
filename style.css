@@ -76,14 +76,18 @@ img.profile_pic {
 }
 
 footer {
-    width: 100%;
-    left:0px;
-    bottom:0px;
-    background-color: #333;
-    font: 400 16px/1.2 'Nixie One', Georgia, serif;
+    /*width: 100%;*/
+    /*left:0px;*/
+    /*bottom:0px;*/
+    /*background-color: #333;*/
+    font-family: 'Nixie One', Georgia, serif;
     color: #9A9A9A;
-    line-height: 24px;
+    /*line-height: 24px;*/
+    /*text-align: center;*/
+    font-size: 10px;
     text-align: center;
+    margin: 0px;
+    padding-bottom: 5px;
     
 }
 
