@@ -92,6 +92,7 @@ li {
    border: 1px solid #CCC;
    font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
    border-radius: 4px;
+   padding: 10px;
 }
 
 .nav {
