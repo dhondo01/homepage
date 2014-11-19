@@ -1,0 +1,128 @@
+<!--
+Dorjee Dhondup
+Internet Programming
+09/30/2014
+-->
+
+
+
+<html> 
+    <head>
+        <title> JavaScript Color </title>
+        <style>
+
+            label {
+                float: left;
+                font-weight: bold;
+                display: block;
+            }
+            
+            input {
+                float: right;
+            }
+            
+            div {
+                width: 200px;
+                height: 30px;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+                padding: 5px;
+/*
+                margin-top: 40px;
+                margin-left: 20px;
+*/
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+        // Function to change background color 
+        color_change = function() {
+            r = document.getElementById("redi").value;
+            g = document.getElementById("greeni").value;
+            b = document.getElementById("bluei").value;
+            
+            if (r != parseInt(r) || parseInt(r) < 0 || parseInt(r) > 255) {
+                if (parseInt(r) < 0 || parseInt(r) > 255) {
+                    window.confirm("Please enter a value between 0-255")
+                }
+                else {
+                    window.confirm("Enter a valid number")
+                }
+                document.getElementById("redi").value = "";
+                return;
+            }
+            
+            if (r != parseInt(r) || parseInt(r) < 0 || parseInt(r) > 255) {
+                if (parseInt(r) < 0 || parseInt(r) > 255) {
+                    window.confirm("Please enter a value between 0-255")
+                }
+                else {
+                    window.confirm("Enter a valid number")
+                }
+                document.getElementById("redi").value = "";
+                return;
+            }
+            
+            if (r != parseInt(r) || parseInt(r) < 0 || parseInt(r) > 255) {
+                if (parseInt(r) < 0 || parseInt(r) > 255) {
+                    window.confirm("Please enter a value between 0-255")
+                }
+                else {
+                    window.confirm("Enter a valid number")
+                }
+                document.getElementById("redi").value = "";
+                return;
+            }
+            
+            document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        }
+        
+        //Function to draw the table and keep records of the colors chosen earlier
+        count = 0;
+        color_history = function() {
+            r = document.getElementById("redi").value;
+            g = document.getElementById("greeni").value;
+            b = document.getElementById("bluei").value;
+            
+            tr =document.createElement('tr');
+            tr.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            
+            used_colors = tr.appendChild(document.createElement('td'));
+            used_colors.setAttribute('id', count);
+
+            used_colors.innerHTML = "r = " + r + ", " + "g = " + g + ", " + "b = " + b;
+            
+            document.getElementById("color_table").appendChild(tr);
+            count++;
+        }
+
+        </script>
+        
+    <div>
+    <label for="redi"> RED: </label>
+    <input type="range" id="redi" onmousemove="color_change()" onmouseup="color_history();" value="23" min="0" max="255"><br>
+    </div>
+
+    <div>
+    <label for="greeni"> GREEN: </label>
+    <input type="range" id="greeni" onmousemove="color_change()" onmouseup="color_history();" value="131" min="0" max="255"><br>
+    </div> 
+
+    <div>
+    <label for="bluei"> BLUE: </label> 
+    <input type="range" id="bluei" onmousemove="color_change()" onmouseup="color_history();" value="229" min="0" max="255"><br>
+    </div> <br> <br>
+<!--    <p> </p>-->
+<!--    Color Table-->
+    <table id="color_table">
+        <th>Color Table</th>
+    </table>
+    
+    
+    </body>
+</html>

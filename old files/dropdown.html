@@ -1,0 +1,98 @@
+<!-- Dorjee Dhondup -->
+<!-- Sept 23, 2014 -->
+<!-- Dropdown Menu Assignment -->
+
+
+<html>
+   <head>
+   <title>Dorjee's Dropdown Menu</title>
+   <style>
+       body {
+        background: #909eab;
+        font-family: Helvetica, sans-serif; font-size: 18px; line-height:24px;
+       }
+       
+       ul {
+           padding: 0;
+           margin: 0;
+       }
+       
+       li {
+           display: inline-block;
+           border-bottom: 1px solid #CCC;
+       }
+       
+       ul.nav li {
+           vertical-align: top;
+           font-size: 100%;
+           text-align: center;
+           width: 105px;
+       }
+       
+       ul.nav li a {
+           display: inline-block;
+           padding: 10px 5px;
+       }
+       
+       ul.nav li a {
+           text-decoration: none;
+       }
+       
+       ul.nav li a:link, a:visited, a:active {
+           color: black;
+       }
+       
+       ul.nav li:hover {
+           background-color: #bbbbbb;
+           color: white;
+       }
+       
+       ul.nav li ul {
+           list-style: none;
+           display: none;
+       }
+       
+       ul.nav li:hover ul {
+           display: inline-block;
+       }
+       
+       ul.nav li ul li {
+           padding: 10px 5px;
+           display: block;
+           width:100px;
+           text-align: left;
+       }
+       
+       ul.nav li:hover ul {
+           background-color: blue;
+       }
+            
+   
+   </style> 
+   </head>
+   <body>
+      <h1>Exercise 8</h1>
+      <ul class="nav">
+         <li>Choirs
+            <ul>
+               <li>Nordic</li>
+               <li>Collegiate</li>
+               <li>Cathedral</li>
+               <li>Norsemen</li>
+               <li>Aurora</li>
+            </ul></li>
+         <li>Soccer
+            <ul>
+               <li>Arsenal</li>
+               <li>Everton</li>
+               <li>Chelsea</li>
+            </ul></li>
+         <li>Buildings
+            <ul>
+               <li>Olin</li>
+               <li>Preus</li>
+               <li>Larson</li>
+            </ul></li>
+      </ul>
+   </body>
+</html>
